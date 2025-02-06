@@ -10,7 +10,7 @@ public class PrimeNum {
         System.out.print("Enter Ending positive number: ");
         int num2 = input.nextInt();
 
-        int count = 0;
+        int count = 0, primeCount = 0;
         for (int i = num1; i < num2; ++i) {
             for (int j = 2; j <= i / 2; ++j) { // a number can never be divided by more than half of it's value
                 if (i % j == 0) { // not num1 % j but it should be i % j
@@ -19,8 +19,11 @@ public class PrimeNum {
                 }
             }
             if (count == 0) {
+                primeCount++;
                 System.out.println("Prime number: " + i);
-            } count = 0;
+            }
+            count = 0;
         }
+        System.out.println("Total prime numbers between " + num1 + " and " + num2 + " is: " + primeCount);
     }
 }
