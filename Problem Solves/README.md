@@ -7,3 +7,6 @@
 6. 1x3x5x.....xn
 7. 1.5x2.5x3.5x.....xn
 8. 1^2x2^2x3^2x.....xn^2
+
+** Basic Problems: **
+1. Prime Number.
