@@ -4,22 +4,23 @@ public class PrimeNum {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter any positive number: ");
-        int num = input.nextInt();
+        System.out.print("Enter Starting positive number: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter Ending positive number: ");
+        int num2 = input.nextInt();
+
         int count = 0;
-        if (num == 0 || num == 1) {
-            System.out.println("Not a prime number");
-        } else {
-            for (int i = 2; i < num / 2; ++i) { // a number can never be divided by more than half of it's value
-                if (num % i == 0) {
-                    System.out.println("Not a prime number");
+        for (int i = num1; i < num2; ++i) {
+            for (int j = 2; j <= i / 2; ++j) { // a number can never be divided by more than half of it's value
+                if (i % j == 0) { // not num1 % j but it should be i % j
                     count++;
                     break;
                 }
             }
             if (count == 0) {
-                System.out.println("Prime number");
-            }
+                System.out.println("Prime number: " + i);
+            } count = 0;
         }
     }
 }
