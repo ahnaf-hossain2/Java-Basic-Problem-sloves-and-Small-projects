@@ -7,14 +7,19 @@ public class PrimeNum {
         System.out.print("Enter any positive number: ");
         int num = input.nextInt();
         int count = 0;
-        for (int i = 2; i < num; ++i) {
-            if (num % i == 0) {
-                System.out.println("Not a prime number");
-                count++;
-                break;
+        if (num == 0 || num == 1) {
+            System.out.println("Not a prime number");
+        } else {
+            for (int i = 2; i < num; ++i) {
+                if (num % i == 0) {
+                    System.out.println("Not a prime number");
+                    count++;
+                    break;
+                }
             }
-        } if (count == 0) {
-            System.out.println("Prime number");
+            if (count == 0) {
+                System.out.println("Prime number");
+            }
         }
     }
 }
