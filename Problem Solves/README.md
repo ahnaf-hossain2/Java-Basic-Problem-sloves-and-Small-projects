@@ -14,3 +14,4 @@
 3. Sum of digits.
 4. Reverse digit.
 5. Palindrome number.
+6. Armstrong Number.
