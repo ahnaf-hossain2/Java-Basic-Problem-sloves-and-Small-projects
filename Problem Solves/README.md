@@ -13,3 +13,4 @@
 2. Fibonacci.
 3. Sum of digits.
 4. Reverse digit.
+5. Palindrome number.
