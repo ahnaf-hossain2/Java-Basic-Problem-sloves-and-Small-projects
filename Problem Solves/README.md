@@ -11,3 +11,5 @@
 ** Basic Problems: **
 1. Prime Number.
 2. Fibonacci.
+3. Sum of digits.
+4. Reverse digit.
